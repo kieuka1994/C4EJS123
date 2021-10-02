@@ -1,34 +1,69 @@
-// STUDY Session 2 
+// STUDY 
 
-/* 
+/*
+1. There diferent examples of invalid name
+- first number 
+- 1number 
+- the first character must not be a digit.
 
-// let vs var vs const
-1.What are var and const in JavaScript?
- - var and const are both used for variable declaration
+2. Check a variable data types: typeof 
 
-2.What are the differences between let and var?
- - var is function scoped and let is block scoped
+3. 1-b; 2-a; 3-e; 4-c
+*/ 
+// SERIOU EXERCICES 
 
-3.What are the differences between let and const?
- - const is a signal that the identifier won't be reassigned 
- - let is a signal that the variable may be reassigned 
+// 3a. 
+let message = 'coding is great';
+console.log(message);
 
-4.What to use in what cases?
- - if you try Var to use variable you'll get a ReferenceError 
- - if you try  Const and Let to use variable you'll get a Undefined 
+// 3b. 
+let studentCount = 0;
+console.log(studentCount);
 
- // Boolean
- 1. What is Boolean?
-  - primitive data type comminly used in computer programming languages
-  - two posible valures: true or false 
+// 4a.
+let message = 'coding is geat'
+message = 'coding might not be easy, but still great';
+console.log(message)
 
+// 4b. 
+let studentCount = 0;
+studentCount = 16; 
+console.log(studentCount);
 
-2.What results in Boolean?
- - One if this is true or truthy, it returns it immediately 
- - Second if it is not true or truthy, it returns the second operand
- - Third operand if both are true/truthy, otherwise it will return false
- - Fourth we get true and in the last case we get ‘word’
+// 4c.
+let message ='coding is great';
+message = 'coding might not be easy, but still great';
+console.log(message.toLocaleLowerCase);
 
-*/
+// 4d. 
+let studentCount = 0;
+studentCount = 16; 
+studentCount += 1;
+console.log(studentCount);
 
+// 5.
+alert(`you look beautiful today`);
 
+// 6.
+let x = prompt ('hi there, your name please');
+alert(`hi $ {x}`);
+
+// 7.
+let firstname = prompt ('enter Sherlock');
+let lastname = prompt('enter Home');
+alert(`hi $ {Sherlock} ${Home}`);
+
+// 8. 
+let square = prompt('Enter the square edge of square');
+square *= square;
+alert(`the square area is ${edge}`);
+
+// 9. 
+let radius = prompt('enter the radius of the circle');
+radius = Math.diameter * Math.PI / 4;
+alert(`the circle area is ${radius}`);
+
+// 10. 
+let temperatureCel = prompt('enter the temperature in celcius');
+let temperatureFah = [(temperatureCel * 1.8) + 32];
+alert(`${temperatureCel} (C) = ${temperatureFah} (F)`);
