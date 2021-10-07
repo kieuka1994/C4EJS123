@@ -1,34 +1,60 @@
-// STUDY Session 2 
+// Study 
 
-/* 
+// 1. Variable swap...
 
-// let vs var vs const
-1.What are var and const in JavaScript?
- - var and const are both used for variable declaration
+// let a = 10, b = 15;
+// [a,b] = [b,a];
+// console.log(`${a} ${b}`);
 
-2.What are the differences between let and var?
- - var is function scoped and let is block scoped
+// let a = 5, b = 10;
+// a = a ^ b;
+// b = a ^ b;
+// a = a ^ b;
 
-3.What are the differences between let and const?
- - const is a signal that the identifier won't be reassigned 
- - let is a signal that the variable may be reassigned 
+// console.log('a is now:', a );
+// console.log('b is now:', b );
 
-4.What to use in what cases?
- - if you try Var to use variable you'll get a ReferenceError 
- - if you try  Const and Let to use variable you'll get a Undefined 
+// 2. Split String into Array...
+ 
+// let message = 'Have a good day';
+// console.log(message.split(' ', 4 )); // ["Have", "a", "good", "day"] 
 
- // Boolean
- 1. What is Boolean?
-  - primitive data type comminly used in computer programming languages
-  - two posible valures: true or false 
+//3. In JavaScript, the spread operator...
 
+// let a=['Steak','Risotto','Burrito', 'Quesadilla'];
+// console.log(...a);
+// let x = [4, 5, 7, -8];
+// console.log(...x);
 
-2.What results in Boolean?
- - One if this is true or truthy, it returns it immediately 
- - Second if it is not true or truthy, it returns the second operand
- - Third operand if both are true/truthy, otherwise it will return false
- - Fourth we get true and in the last case we get ‘word’
+//4. Write a script...
 
-*/
+// let shop = ['C','U','D','R'];
+// let items = ['Jeans', 'T-Shirt', 'Socks'];
+// while(true){
+//     let ask = prompt('Hello, welcome to shop home, what do you want (C, R, U, D)');
+//     if (ask == 'r'){
+//         console.log('The items in the shop are:');
+//         for(i = 0; i < items.length; i++){
+//             console.log(`${i+1}. ${items[i]}`)
+            
+//         }
+//     }else if(ask == 'c'){
+//         let newItem = prompt('Enter the name of the new item at the shop');
+//         items.push(newItem);
+//         alert('Done');
+//     }else if(ask == 'u'){
+//         let updateItem = prompt('Enter the position at the shop you want to update');
+//         let newName = prompt('Enter the new name at the shop ');
+//         items[position] = newName;
+//         alert('Done');
+
+//     }else if(ask == 'd'){
+//         let deleteItem = prompt('Enter the position at the shop you want to delete')
+//         alert('Done');
+//     }else{
+//         alert('This command is not supported');
+//         break
+//     }
+// }
 
 
