@@ -1,0 +1,45 @@
+/* 1 */
+
+p{
+   color: red 
+} 
+
+/* 2 */ 
+
+.Ku{
+    color: #00FF00
+}
+
+/* 3 */
+p, h2{
+    height: 24px
+}
+
+/* 4 */ 
+div,p{
+    font-size: 3em;
+    background: wheat
+}
+
+/* 5 */ 
+#div2 h1{
+    color:blue
+}
+
+/* 6 */
+
+/* 7 */
+ul li{
+    font-weight: bold;
+}
+
+/* 9 */
+.item span{
+    height: 18px;
+}
+.item > div > span{
+    font-style: italic;
+}
+
+
+
