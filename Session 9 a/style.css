@@ -7,7 +7,7 @@ display: inline-block;
 margin: 10px;
 }
 
-.container_content {
+.container {
     display: flex;
     flex: 15%;
     margin: 15%;
