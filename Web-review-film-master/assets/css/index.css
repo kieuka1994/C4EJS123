@@ -1,0 +1,55 @@
+/* Reset css */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    line-height: 16px;
+    height: 10000px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Index CSS */
+
+.movie__wrap{
+    padding: 0 46px;
+    background-color: #06121e;
+}
+
+.movie__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.movie-logo{
+    width: 240px;
+}
+
+.movie__logo-image{
+    width: 160px;
+    object-fit: cover;
+}
+
+.movie__menu{
+    display: flex;
+}
+
+.movie__menu-item{
+    margin-left: 18px;
+}
+
+.movie__menu-link{
+    font-size: 18px;
+}
