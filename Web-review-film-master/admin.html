@@ -30,12 +30,12 @@
                 </div>
                 <div class="manage__item">
                     <h2 class="manage__name">Loại phim</h2>
-                    <select name="flim" id="film_type" class="manage__box">
+                    <select name="flim" id="film_type" class="manage__box" onchange="listFilm()">
                         <option value="">-- Chọn --</option>
-                        <option value="">Phim bộ</option>
-                        <option value="">Phim chiếu rạp</option>
-                        <option value="">Phim hoạt hình</option>
-                        <option value="">Phim lẻ</option>
+                        <!-- <option value="phimbo">Phim bộ</option>
+                        <option value="phimchieurap">Phim chiếu rạp</option>
+                        <option value="phimhoathinh">Phim hoạt hình</option>
+                        <option value="phimle">Phim lẻ</option> -->
                     </select>
                 </div>
                 <div class="manage__item">
@@ -48,10 +48,10 @@
                 </div>
                 <div class="manage__item">
                     <h2 class="manage__name">Link tập phim</h2>
-                    <input type="text" class="manage__box">
+                    <input type="text" class="manage__box" id="film_link">
                 </div>
-                <button class="manage__button">Add</button>
-                <button class="manage__button manage__button--orange">Reset</button>
+                <button class="manage__button" id="add__button" onclick="addFilm()">Add</button>
+                <input type="reset" class="manage__button manage__button--orange">
             </div>
             <!-- End phần nhập -->
         </div>
@@ -70,34 +70,17 @@
                         <th>Link ảnh</th>
                         <th>Tập số</th>
                         <th>Link tập phim</th>
-                        <th>Create</th>
                         <th>Edit</th>
                         <th>Delete</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Thẩm Phán Ác Ma - The Devil Judge (2021)</td>
-                        <td>Phim tình cảm</td>
-                        <td>
-                            https://www.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/60d6f009b1a6a7b00d2ceaf4_poster-tham-phan-ac-ma.jpg
-                        </td>
-                        <td>1</td>
-                        <td>
-                            https://www.ssphim.net/p/tham-phan-ac-ma-tap-1
-                        </td>
-                        <td>
-                            <button class="manage__button manage__button--orange">Thêm</button>
-                        </td>
-                        <td>
-                            <button class="manage__button manage__button--yellow">Sửa</button>
-                        </td>
-                        <td>
-                            <button class="manage__button manage__button--red">Xóa</button>
-                        </td>
+                <tbody id="film_item">
+                </tbody>
+            </table>
+        </div>
+        <!-- End phần table -->
     </div>
 
-    <script src=""></script>
+    <script src="./assets/js/admin.js"></script>
 </body>
 </html>

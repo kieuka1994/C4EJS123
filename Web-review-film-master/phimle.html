@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mindflix</title>
+    <title>Phim lẻ</title>
     <!-- CSS reset -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <!-- Thư viện Font-awesome => cop tại https://cdnjs.com/libraries/font-awesome-->
@@ -16,6 +16,7 @@
     
     <!-- Index CSS -->
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/page.css">
 
     <!-- Link cho ảnh lên phần URL -->
     <link rel='shortcut icon' href='./assets/img/sublogo.png'/>
@@ -48,16 +49,8 @@
             </ul>
             <div class="movie__menu-right">
                 <button class="movie__menu-btn">Đăng nhập</button>
-                <div class="movie__menu-search movie__search-wrap">
+                <div class="movie__menu-search">
                     <i class="movie__menu-icon fas fa-search"></i>
-                    <div class="movie__search-box">
-                        <div class="movie__slidebar-input">
-                            <input type="text" placeholder="Nhập tên phim..." class="movie__slidebar-input-box" id="movie__search">
-                            <div class="movie__slidebar-search">
-                                <i class="fa fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="movie__menu-search">
                     <i class="movie__menu-icon fa fa-bookmark"></i>
@@ -68,7 +61,7 @@
             </div>
         </div>
         <!-- End Thanh Menu -->
-
+    
         <!-- Start Slidebar -->
         <div class="movie__slidebar-container" id="movie__slidebar-container">
             <div class="movie__slidebar" id="movie__slidebar">
@@ -82,7 +75,7 @@
                         </a>
                     </div>
                     <div class="movie__slidebar-input">
-                        <input type="text" placeholder="Nhập tên phim..." class="movie__slidebar-input-box" id="movie__search">
+                        <input type="text" placeholder="Nhập tên phim..." class="movie__slidebar-input-box">
                         <div class="movie__slidebar-search">
                             <i class="fa fa-search"></i>
                         </div>
@@ -122,115 +115,13 @@
         </div>
         <!-- End Slidebar -->
 
-        <!-- Start Slider -->
-        <div class="movie__slider">
-            <!-- <img src="./assets/img/Slider/slider1.jpg" alt="slider1" class="movie__slider-img"> -->
-            <i class="fa fa-angle-left movie__slider-prev"></i>
-            <ul class="movie__slider-dots">
-                <li class="movie__slider-dot-item active" data-index="0"></li>
-                <li class="movie__slider-dot-item" data-index="1"></li>
-                <li class="movie__slider-dot-item" data-index="2"></li>
-                <li class="movie__slider-dot-item" data-index="3"></li>
-                <li class="movie__slider-dot-item" data-index="4"></li>
-            </ul>
-            <div class="movie__slider-wrapper">
-                <div class="movie__slider-main">
-                    <div class="movie__slider-item">
-                        <img src="./assets/img/Slider/slider1.jpeg" alt="slider1">
-                    </div>
-                    <div class="movie__slider-item">
-                        <img src="./assets/img/Slider/slider2.jpg" alt="slider2">
-                    </div>
-                    <div class="movie__slider-item">
-                        <img src="./assets/img/Slider/slider3.jpg" alt="slider3">
-                    </div>
-                    <div class="movie__slider-item">
-                        <img src="./assets/img/Slider/slider4.jpeg" alt="slider4">
-                    </div>
-                    <div class="movie__slider-item">
-                        <img src="./assets/img/Slider/slider5.jpg" alt="slider5">
-                    </div>
-                </div>
-            </div>
-            <i class="fa fa-angle-right movie__slider-next"></i>
-        </div>
-        <!-- End Slider -->
-
         <!-- Start Content -->
         <div class="movie__content">
-            <div class="movie__box">
-                <div class="movie__header-wrap">
-                    <h2 class="movie__header">
-                        <i class="fas fa-film"></i>
-                        Phim bộ
-                    </h2>
-                    <p class="movie__expand">
-                        <a href="phimbo.html">
-                            <i class="fa fa-angle-double-right"></i>
-                            Xem tất cả
-                        </a>
-                    </p>
-                </div>
-                <div class="movie__list" id="phimbo">
-                    <div class="movie__item">
-                        <img src="" alt="" class="movie__image">
-                        <h1 class="movie__title"></h1>
-                    </div>
-                </div>
+            <div class="content__header">
+                <h2 class="content__text">Phim lẻ</h2>
+                <p class="content__news">Mới cập nhật</p>
             </div>
             <div class="movie__box">
-                <div class="movie__header-wrap">
-                    <h2 class="movie__header">
-                        <i class="fas fa-tape"></i>
-                        Phim chiếu rạp
-                    </h2>
-                    <p class="movie__expand">
-                        <a href="phimchieurap.html">
-                            <i class="fa fa-angle-double-right"></i>
-                            Xem tất cả
-                        </a>
-                    </p>
-                </div>
-                <div class="movie__list">
-                    <div class="movie__item">
-                        <img src="" alt="" class="movie__image">
-                        <h1 class="movie__title"></h1>
-                    </div>
-                </div>
-            </div>
-            <div class="movie__box">
-                <div class="movie__header-wrap">
-                    <h2 class="movie__header">
-                        <i class="fas fa-ice-cream"></i>
-                        Phim hoạt hình
-                    </h2>
-                    <p class="movie__expand">
-                        <a href="phimhoathinh.html">
-                            <i class="fa fa-angle-double-right"></i>
-                            Xem tất cả
-                        </a>
-                    </p>
-                </div>
-                <div class="movie__list">
-                    <div class="movie__item">
-                        <img src="" alt="" class="movie__image">
-                        <h1 class="movie__title"></h1>
-                    </div>
-                </div>
-            </div>
-            <div class="movie__box">
-                <div class="movie__header-wrap">
-                    <h2 class="movie__header">
-                        <i class="fa fa-theater-masks"></i>
-                        Phim lẻ
-                    </h2>
-                    <p class="movie__expand">
-                        <a href="phimle.html">
-                            <i class="fa fa-angle-double-right"></i>
-                            Xem tất cả 
-                        </a>
-                    </p>
-                </div>
                 <div class="movie__list" id="phimle">
                     <div class="movie__item">
                         <img src="" alt="" class="movie__image">
@@ -240,7 +131,6 @@
             </div>
         </div>
         <!-- End Content -->
-
         <!-- Start Footer -->
         <footer class="footer">
             <div class="footer__left">
@@ -322,8 +212,6 @@
             </div>
         </footer>
         <!-- End Footer -->
-    </div>
-
-    <script src="./assets/js/index.js"></script>
 </body>
+<script src="./assets/js/phimle.js"></script>
 </html>
